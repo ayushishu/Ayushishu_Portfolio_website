@@ -8,6 +8,6 @@ job('who-is-ayush-wedsite') {
         scm('* * * * *')
     }
     steps {
-        batch('docker-compose up -d)
+        batch('docker-compose up -d')
     }
 }
