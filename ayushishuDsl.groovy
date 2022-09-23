@@ -7,5 +7,5 @@ job('who-is-ayush-wedsite') {
     triggers {
         scm('* * * * *')
     }
-    
+    shell '''docker-compose up -d'''
 }
