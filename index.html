@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayush__ishu_</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #111;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide-card {
+            background: linear-gradient(90deg,
+                    rgba(157, 168, 238, 1) 0%,
+                    rgba(205, 227, 241, 1) 39%,
+                    rgba(255, 255, 255, 1) 99%);
+            box-shadow: 6px 7px 8px -7px #8a93fb;
+            margin: 0 40px;
+            padding: 45px 63px;
+            border-radius: 20px;
+            border: 0;
+            cursor: grab;
+        }
+
+        .slide-card .slide-card-img-top {
+            max-width: 100px;
+            border-radius: 50%;
+            margin: 15px auto 0;
+            box-shadow: 0 8px 20px -4px #8a86e8;
+            width: 100px;
+            height: 100px;
+        }
+
+        .slide-card h5 {
+            color: #3345c6;
+            font-size: 21px;
+            margin: 15px 0;
+        }
+
+        .slide-card h5 span {
+            font-size: 18px;
+            color: #111;
+        }
+
+        .slide-card p {
+            font-size: 18px;
+            color: #000;
+            padding-bottom: 15px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+        }
+
+        /* transform active card  */
+        .swiper-slide.swiper-slide-active {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Slider main container (wrap all slide cards in swiper main container)-->
+    <div class="swiper">
+        <!-- Additional required wrapper (wrap all slide cards in wrapper container) -->
+        <div class="swiper-wrapper">
+            <!-- Slides (wrap each slide-card in swiper-slide )-->
+            <div class="swiper-slide">
+                <div class="slide-card ">
+                    <img class="slide-card-img-top" src="1.jfif" alt="" />
+                    <div class="slide-card-body">
+                        <h5>
+                            AYUSH <br />
+                            <span>Student at Chandigarh University  </span>
+                        </h5>
+                        <p class="slide-card-text">
+                            🎓 I’m currently a junior pursuing my Bachelors in Computer Science & Engineering and have a strong interest in Open-Source💙And currently on the path of learning DevOps.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slides (wrap each slide-card in swiper-slide )-->
+            <div class="swiper-slide">
+                <div class="slide-card ">
+                    <img class="slide-card-img-top" src="ayushishu.png" alt="" />
+                    <div class="slide-card-body">
+                        <h5>
+                            AYUSH <br />
+
+                        </h5>
+                        <h2  style="text-align:left ;" >Skills :-</h4>
+                        <p class="slide-card-text" style="color: #bdcdee;">
+                            <h3 style="text-align:left ;">✅ Git</h3>
+                            <h3 style="text-align:left ;">✅ Docker </h3>
+                            <h3 style="text-align:left ;">✅ Jenkins  </h3>
+                            <h3 style="text-align:left ;">✅ Kubernetes </h3>
+                            <h3 style="text-align:left ;">✅ Terraform </h3>
+                            <h5></h5>
+                            <h4 style="text-align:left ;">✅ C++ | JAVA | C | HTML | CSS | PYTHON{Basic} <h4>
+                            <h1>___________</h1>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slides (wrap each slide-card in swiper-slide )-->
+            <div class="swiper-slide">
+                <div class="slide-card ">
+                    <img class="slide-card-img-top" src="ayush.jpg" alt="" />
+                    <div class="slide-card-body">
+                        <h5>
+                            AYUSH ISHU <br />
+                            <span> Follow Me </span>
+                        </h5>
+                        <p class="slide-card-text">
+                            <a href="https://www.instagram.com/ayush__ishu_/">Instagram😜  <br /> </a>
+                            <a href="https://www.linkedin.com/in/ayushishu/">Linked😎 <br />  </a>
+                            <a href="https://twitter.com/Ayush01404154">Twiter👽 <br /> </a>
+                            <a href="https://ayushishu.hashnode.dev/how-to-create-a-yaml-manifest-template-in-monokle">My Blogs📑 <br /> </a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slides (wrap each slide-card in swiper-slide )-->
+            <div class="swiper-slide">
+                <div class="slide-card ">
+                    <img class="slide-card-img-top" src="4.jfif" alt="" />
+                    <div class="slide-card-body">
+                        <h5>
+                             <br />
+                            <span>  </span>
+                        </h5>
+                        <p class="slide-card-text">
+                            “ If you want to live a happy life, tie it to a goal, not to people or things ”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            //parameter for center active slide 
+            centeredSlides: true,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        })
+
+       
+    </script>
+</body>
+
+</html>
