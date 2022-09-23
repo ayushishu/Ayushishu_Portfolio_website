@@ -7,9 +7,5 @@ job('who-is-ayush-wedsite') {
     triggers {
         scm('* * * * *')
     }
-    build {
-        execute-windows-batch-command{
-            cmd('docker-compose down','docker-compose up -d')
-        }
-    }
+    
 }
