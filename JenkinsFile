@@ -11,7 +11,7 @@ pipeline {
     stage('Remove old image build ') 
     {
          steps {
-            bat 'docker image rm ayushishu_portfolio_website_wed'
+            bat 'docker image rm who-is-ayush-wedsite-dev-branch'
              }
     }         
     stage('Build and deploy update image')
