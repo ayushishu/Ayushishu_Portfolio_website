@@ -1,3 +1,10 @@
+job('who-is-ayush-wedsite-dev-branch') {
+  description("dev-branch-CI-CD pipe-line for Ayushishu portfolio website")
+
+  scm {
+    git branch: 'dev', url: 'https://github.com/ayushishu/Ayushishu_Portfolio_website/'
+    }
+  
 pipeline {
   agent any
   stages 
@@ -18,4 +25,9 @@ pipeline {
     
   
   } 
+}
+
+
+
+
 }
