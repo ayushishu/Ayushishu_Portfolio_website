@@ -1,0 +1,16 @@
+FROM nginx:latest
+
+
+LABEL version="0.0.1"
+
+EXPOSE 80
+
+WORKDIR /usr/share/nginx/html
+COPY scr/index.html index.html
+COPY scr/style.css style.css
+
+COPY scr/media/1.jfif media/1.jfif
+COPY scr/media/4.jfif media/4.jfif
+COPY scr/media/ayush.jpg media/ayush.jpg 
+COPY scr/media/ayushishu.png media/ayushishu.png
+COPY scr/media/icon.png media/icon.png
