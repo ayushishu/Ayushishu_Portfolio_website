@@ -7,13 +7,7 @@ pipeline {
       steps {
         bat 'docker-compose down '
         }
-    }
-    stage('Remove old image build ') 
-    {
-         steps {
-            bat 'docker image rm who-is-ayush-wedsite-dev-branch'
-             }
-    }         
+    }       
     stage('Build and deploy update image')
     {
           steps {
