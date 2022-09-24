@@ -1,0 +1,17 @@
+pipeline {
+    agent any 
+    stage('Remove old deployment') {
+         steps {
+            batchFile('docker-compose down ')
+    }
+    stage('Remove old image build ')
+         steps {
+            batchFile('docker image rm ayushishu_portfolio_website_wed')
+             }
+    stage('Build and deploy update image')
+          steps {
+            batchFile('docker-compose up -d')
+          }
+
+    }
+}
