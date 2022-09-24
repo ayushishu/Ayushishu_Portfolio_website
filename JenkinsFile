@@ -4,7 +4,7 @@ job('who-is-ayush-wedsite-dev-branch') {
   scm {
     git branch: 'dev', url: 'https://github.com/ayushishu/Ayushishu_Portfolio_website/'
     }
-  
+}  
 pipeline {
   agent any
   stages 
@@ -30,4 +30,3 @@ pipeline {
 
 
 
-}
