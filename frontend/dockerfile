@@ -14,4 +14,3 @@ COPY webapp/media/4.jfif media/4.jfif
 COPY webapp/media/ayush.jpg media/ayush.jpg 
 COPY webapp/media/ayushishu.png media/ayushishu.png
 COPY webapp/media/icon.png media/icon.png
-CMD gunicorn --bind 0.0.0.0:$PORT wsgi 
