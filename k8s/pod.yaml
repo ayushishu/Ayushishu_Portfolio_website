@@ -1,0 +1,19 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+
+  name: who-is-ayush-website-dev
+
+spec:
+
+  containers:
+
+  - name: who-is-ayush-website-dev
+
+    image: ayushishu/who-is-ayush-website-dev:v1
+
+    ports:
+
+    - containerPort: 80
